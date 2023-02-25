@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> Survey Form</title> 
+    <link rel="stylesheet" href="styles.css">
+  </head> 
+<body>
+
+<h1 id="title">Survey Form</h1>
+
+<p id="description">Quick way to get to know the Reader.</p>
+
+<form id="survey-form">
+<div class="form-group">
+
+<div class="user-info">
+
+  <label id="name-label">Name
+    <input placeholder="Enter your Name" 
+    id="name" 
+    type="text"
+    required>
+    </input> 
+  </label>
+
+  <label id="email-label">Email
+     <input placeholder="Enter your Email"
+     id="email" type="email"
+     required>
+     </email> 
+    </label>
+
+  <label id="number-label">Age
+     <input  placeholder="Enter  number"
+     id="number" 
+     type="number" 
+     min="1" max="100" required>
+    </input> 
+  </label>
+</div>
+
+
+<div class="dropdwon">Do you prefer Coffee or Tea? 
+  <select id="dropdown">
+      <option value="">(Select one)</option>
+      <option value="Coffee">Coffee</option>
+      <option value="Tea">Tea</option>
+  </select>
+</label>
+</div>
+
+<div class="person-type">
+  <p>What type of person are you? </p>
+    <label for="early-bird">
+      <input id="early-bird"
+      name="person-type"
+      type="radio" 
+      class="inline"
+      value="early-bird">I'm an Early Bird.</input>     
+    </label>
+
+    <label for="night-owl">
+      <input id="night-owl"
+      name="person-type"
+      type="radio"
+      class="inline"
+      value="night-owl">I'm a Night Owl.</input>
+    </label>  
+
+    <label for="go-flow">
+      <input id="go-flow"
+      name="person-type"
+      type="radio"
+      class="inline"
+      value="go-flow">I go with the flow.</input>   
+    </label>
+</div>
+
+<div class="favourite-food">
+  <p> What types of food do you prefer?  
+  <span class="clue">(Check all that apply)
+  </span>
+  </p>
+
+  <label>
+    <input
+      name="prefer"
+      value="prefered-food"
+      type="checkbox"
+      class="input-checkbox"/>
+      Italian</label>
+
+   <label>
+    <input
+      name="prefer"
+      value="prefered-food"
+      type="checkbox"
+      class="input-checkbox"/>
+      Chinise</label>
+
+   <label>
+    <input
+      name="prefer"
+      value="prefered-food"
+      type="checkbox"
+      class="input-checkbox"/>
+      Hispanic</label>
+
+   <label>
+    <input
+      name="prefer"
+      value="prefered-food"
+      type="checkbox"
+      class="input-checkbox"/>
+      Vietnamese</label>
+
+ <label>
+    <input
+      name="prefer"
+      value="prefered-food"
+      type="checkbox"
+      class="input-checkbox"/>
+      Indian</label>
+</div>
+
+<div class="form-group">
+          <p>Waht's a random fact about you?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Random fact..."
+          ></textarea>
+        </div>
+
+<div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+
+</form>
+</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </html>
